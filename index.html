@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RFID信息—车管系统</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .info {
+            list-style-type: none;
+            padding: 0;
+        }
+        .info li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .info li:last-child {
+            border-bottom: none;
+        }
+        .label {
+            color: #888; /* 淡化文本 */
+            font-weight: normal;
+        }
+        .label::after {
+            content: "     "; /* 添加5个空格 */
+        }
+        .value {
+            color: black;
+            font-weight: normal; /* 确保文本不加粗 */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <ul class="info">
+            <li><span class="label">车牌号:  </span><span class="value">赣ARN9381</span></li>
+            <li><span class="label">车主姓名:</span><span class="value">郭**</span></li>
+            <li><span class="label">入网时间:</span><span class="value">2023-11-01 10:21:50</span></li>
+        </ul>
+    </main>
+</body>
+</html>
